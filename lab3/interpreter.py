@@ -24,12 +24,13 @@ def lexer(contents):
                 temp_str += char
         tokens.append(temp_str)
 
+
         for token in tokens:
             if token[0] == '"' or token[0] == "'":
                 if token[-1] == '"' or token[-1] == "'":
                     items.append(("string", token))
                 else:
-                    print("Error, Wrong format of String")
+                    print("Wrong format of String")
                     break
             elif re.match(r"[.a-zA-Z]+", token):
                 items.append(("symbol", token))
