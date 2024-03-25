@@ -46,6 +46,18 @@ accepted or rejected. Basically, it is an abstract model of a digital computer w
 reads an input string and changes its internal state depending on the current input symbol. 
 Every automaton defines a language i.e. set of strings it accepts. 
 The following figure shows some essential features of general automation.
+
+My laboratory work was done in Python language. Variant 20:
+
+Q = {q0,q1,q2,q3}, <br>
+∑ = {a,b,c}, <br>
+F = {q3} <br>
+δ(q0,a) = q0, <br>
+δ(q0,a) = q1, <br>
+δ(q2,a) = q2, <br>
+δ(q1,b) = q2, <br>
+δ(q2,c) = q3, <br>
+δ(q3,c) = q3. <br>
 ## Implementation
 
 
@@ -184,6 +196,10 @@ F = ['q3']
 
 ### Conclusion
 
-In this lab we built a really basic example of a Lexer, which is able to 
-split our inserted code and details into tokens, which can then be classified.
-This is the base step in creating our own programming language.
+To sum up, this lab work has given me a better understanding of formal languages and finite
+automata. Deterministic or non-deterministic finite automata are basic building blocks for
+language analysis and pattern recognition. Deterministic finite automata (DFAs) and non-deterministic
+finite automata (NFAs) are two different categories that show off the flexibility and computing
+capacity of these abstract machines. While NFAs allow for numerous pathways from one state to
+another, DFAs follow a fixed sequence of states for every input string.I also studied and understood
+better the Chomsky hierarchy. 
