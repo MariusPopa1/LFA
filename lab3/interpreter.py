@@ -33,10 +33,13 @@ def lexer(contents):
                     print("Wrong format of String")
                     break
             elif re.match(r"[.a-zA-Z]+", token):
-                items.append(("symbol", token))
+                if token in "andeliffromlambdareturnbreakelseglobalnottryclassexceptiforwhilecontinueexecimportpassdefinprintdelforisraise":
+                    items.append(("command", token))
+                else:
+                    items.append(("symbol", token))
             elif re.match(r"[.0-9]+", token):
                 items.append(("number", token))
-            elif token in "+-*/":
+            elif token in "+-*/=":
                 items.append(("expression", token))
 
     return items
