@@ -7,7 +7,6 @@ def lexer(contents):
     for line in lines:
         chars = list(line)
         tokens = []
-
         temp_str = ""
         quote_count = 0
         for char in chars:
