@@ -41,7 +41,7 @@ Start by understanding the special characters used in regex, such as “.”, �
 Choose a programming language or tool that supports regex, such as Python, Perl, or grep.
 Write your pattern using the special characters and literal characters.
 Use the appropriate function or method to search for the pattern in a string.
-Examples:
+Examples: 
 To match a sequence of literal characters, simply write those characters in the pattern.
 To match a single character from a set of possibilities, use square brackets, e.g. [0123456789] matches any digit.
 To match zero or more occurrences of the preceding expression, use the star (*) symbol.
